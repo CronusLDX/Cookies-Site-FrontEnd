@@ -10,7 +10,7 @@ const Colaboradores: React.FC = () => {
       name: 'Alonso da Silva',
       profileImage: 'src/assets/pessoa1.svg',
       description:
-        'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. Ele é um dos nossos melhores!',
+        'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. \nEle é um dos nossos melhores!',
     },
     {
       name: 'Alonso da Silva',
@@ -27,7 +27,7 @@ const Colaboradores: React.FC = () => {
   ];
   return (
     <section className="bg-[#3d0d0d] text-white py-16 px-8 text-center w-full">
-      <h1 className="text-5xl lily mb-[3rem]">Nossa Equipe</h1>
+      <h1 className="text-4xl lg:text-5xl lily mb-[3rem]">Nossa Equipe</h1>
       <p className="text-xl font-light mb-10">
         Arraste para a esquerda ou para a direita!
       </p>

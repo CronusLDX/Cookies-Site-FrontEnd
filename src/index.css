@@ -11,7 +11,40 @@
 .lily-light {
   font-family: 'Lily Script One', sans-serif;
   font-weight: 300;
+  font-size: 45px;
 }
+.lily-light2 {
+  font-family: 'Lily Script One', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+}
+
+.orange {
+  background: rgb(255, 136, 0);
+}
+@media screen and (max-width: 768px) {
+  .lily-light {
+    font-size: 35px;
+  }
+  .lily-light2 {
+    font-size: 35px;
+  }
+  .orange {
+    background: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .lily-light {
+    font-size: 35px;
+  }
+  .lily-light2 {
+    font-size: 35px;
+  }
+  .orange {
+    background: none;
+  }
+}
+
 .browm {
   background-color: #3c1010;
 }
