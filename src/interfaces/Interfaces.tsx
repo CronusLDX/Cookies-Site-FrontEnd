@@ -3,3 +3,8 @@ export interface CollabInfo {
   profileImage: string;
   description: string;
 }
+
+export interface FaqInfo {
+  question: string;
+  answer: string;
+}

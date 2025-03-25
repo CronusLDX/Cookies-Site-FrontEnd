@@ -24,10 +24,10 @@
 }
 @media screen and (max-width: 768px) {
   .lily-light {
-    font-size: 35px;
+    font-size: 30px;
   }
   .lily-light2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .orange {
     background: none;
@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 480px) {
   .lily-light {
-    font-size: 35px;
+    font-size: 30px;
   }
   .lily-light2 {
     font-size: 35px;

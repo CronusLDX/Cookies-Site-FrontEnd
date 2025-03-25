@@ -12,13 +12,13 @@ const Apresentacao: React.FC = () => {
           <h1 className="lily-light ">
             Compre agora mesmo os melhores Cookies saudáveis!
           </h1>
-          <p className="lg:text-[21px] md:text-[20px] sm:text-[20px] font-light my-10">
-            Descubra o sabor irresistível dos nossos cookies artesanais! Feitos
-            com ingredientes selecionados, nossos cookies são a combinação
-            perfeita de crocância e suavidade. Experimente a verdadeira delícia
-            em cada mordida – o sabor que vai conquistar o seu coração. Não
-            perca a oportunidade de saborear os melhores cookies saudáveis,
-            feitos especialmente para você.
+          <p className="lg:text-[21px] md:text-[21px] sm:text-[2px] font-light my-10">
+            Descubra o sabor irresistível dos nossos cookies artesanais!
+            <br /> <br /> Feitos com ingredientes selecionados, nossos cookies
+            são a combinação perfeita de crocância e suavidade. Experimente a
+            verdadeira delícia em cada mordida – o sabor que vai conquistar o
+            seu coração. Não perca a oportunidade de saborear os melhores
+            cookies saudáveis, feitos especialmente para você.
           </p>
           <a
             href="#"

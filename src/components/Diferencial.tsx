@@ -7,7 +7,7 @@ const Diferencial = () => {
     <section className="bg-[#3d0d0d] text-white py-10 px-5 text-center w-full h-full ">
       <h2 className="text-4xl lg:text-5xl lily my-[5rem]">Nosso Diferencial</h2>
 
-      <div className="grid grid-cols-2 gap-10 max-w-3xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-3xl mx-auto">
         <div className="border-2 border-white rounded-lg p-5 flex flex-col items-center">
           <div className="w-12 h-12 bg-white flex items-center justify-center rounded-full mb-3">
             <img src={deliveryLogo} alt="Ícone 1" className="w-8 h-8" />
