@@ -4,7 +4,7 @@ import bastaoLogo from '/src/assets/bastao-de-asclepio.svg';
 
 const Diferencial = () => {
   return (
-    <section className="bg-[#3d0d0d] text-white py-10 px-5 text-center w-full h-full ">
+    <section className="bg-[#3d0d0d] text-white py-10  px-5 text-center w-full h-full ">
       <h2 className="text-4xl lg:text-5xl lily my-[5rem]">Nosso Diferencial</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-3xl mx-auto">
