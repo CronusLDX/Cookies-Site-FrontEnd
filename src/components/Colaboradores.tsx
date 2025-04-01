@@ -2,7 +2,7 @@ import '../../node_modules/swiper/swiper.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import CollabCard from './CollabCard';
-import { CollabInfo } from '../interfaces/Interfaces';
+import { CollabInfo } from '../entities/Interfaces';
 
 const Colaboradores: React.FC = () => {
   const workersInfo: CollabInfo[] = [

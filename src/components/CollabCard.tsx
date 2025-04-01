@@ -1,4 +1,4 @@
-import { CollabInfo } from '../interfaces/Interfaces';
+import { CollabInfo } from '../entities/Interfaces';
 
 const CollabCard: React.FC<{ prop: CollabInfo }> = ({ prop }) => {
   return (

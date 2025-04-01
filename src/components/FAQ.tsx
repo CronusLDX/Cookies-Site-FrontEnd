@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaqInfo } from '../interfaces/Interfaces';
+import { FaqInfo } from '../entities/Interfaces';
 
 const FAQ: React.FC<{ prop: FaqInfo }> = ({ prop }) => {
   const [open, setOpen] = React.useState(false);

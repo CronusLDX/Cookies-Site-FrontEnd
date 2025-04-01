@@ -1,6 +1,6 @@
 import React from 'react';
 import FAQ from './FAQ';
-import { FaqInfo } from '../interfaces/Interfaces';
+import { FaqInfo } from '../entities/Interfaces';
 
 const FAQSection: React.FC = () => {
   const faqData: FaqInfo[] = [
