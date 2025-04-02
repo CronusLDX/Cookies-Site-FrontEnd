@@ -10,7 +10,8 @@ const Cardapio: React.FC = () => {
     {
       id: 1,
       title: 'Cookie de Aveia',
-      description: 'Cookie de limão com uma deliciosa cobertura de limão.',
+      description:
+        'Cookie de aveia  com  um delicioso sabor, além do mais é saudável!',
       image: 'src/assets/cookie-aveia.svg',
       price: 8.99,
       quantity: 0,
@@ -26,7 +27,8 @@ const Cardapio: React.FC = () => {
     {
       id: 3,
       title: 'Cookie de Morango',
-      description: 'Cookie de limão com uma deliciosa cobertura de limão.',
+      description:
+        'Cookie de morango com especial sabor que a própria fruta traz!',
       image: 'src/assets/cookie-morango.svg',
       price: 7.99,
       quantity: 0,
@@ -34,7 +36,7 @@ const Cardapio: React.FC = () => {
     {
       id: 4,
       title: 'Cookie de Gotas de Chocolate',
-      description: 'Cookie de limão com uma deliciosa cobertura de limão.',
+      description: 'Cookie de gotas de chocolate tradicional!',
       image: 'src/assets/cookies-chocolate.svg',
       price: 10.99,
       quantity: 0,
@@ -46,9 +48,9 @@ const Cardapio: React.FC = () => {
       <p className="lg:text-lg text-md font-light mb-10">
         Arraste para um dos lados e verifique o nosso cardápio!
       </p>
-      <div className="w-[89%] lg:w-[95%] h-64 lg:h-80 justify-center flex items-center py-5 ">
+      <div className="w-[89%] lg:w-[95%] h-64 lg:h-80 justify-center flex items-center py-5 mb-16 ">
         <Swiper
-          spaceBetween={50}
+          spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },

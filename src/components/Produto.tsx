@@ -14,13 +14,13 @@ const Produto: React.FC<{ prop: CarrinhoInfo }> = ({ prop }) => {
   };
   return (
     <section className="w-full h-full flex justify-center items-center bg-[#F6EFEF]  flex-col  rounded-2xl lg:hover:scale-105 transition-all duration-500 ease-in-out transform lg:hover:cursor-pointer ">
-      <div className="w-[90%] h-full flex justify-between items-center py-7 px-5 lg:py-10 lg:px-7 gap-5">
+      <div className="w-[90%] h-full flex justify-between items-center py-5 px-3 lg:py-9 lg:px-5 gap-4">
         <div
           className=" h-[95%] lg:h-full w-[80%] lg:w-[80%] bg-cover bg-center rounded-2xl"
           style={{ backgroundImage: `url(${prop.image})` }}
         ></div>
         <div className="flex flex-col   w-full h-full ">
-          <h2 className="lily text-md lg:text-2xl py-2 lg:py-2">
+          <h2 className="lily text-md lg:text-2xl py-1 lg:py-1">
             {prop.title}
           </h2>
           <p className="text-sm lg:text-lg font-light">{prop.description}</p>
