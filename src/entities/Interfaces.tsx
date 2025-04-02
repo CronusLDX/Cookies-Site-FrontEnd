@@ -36,3 +36,15 @@ export interface CartContextType {
   handleFinishOrder: () => void;
   handleTotalCartOrder: () => number;
 }
+
+export interface PopUpContextType {
+  purchasePopUp: boolean;
+  removePopUp: boolean;
+  emptyCartErrorPopUp: boolean;
+  showPurchasePopUp: () => void;
+  hidePurchasePopUp: () => void;
+  showRemovePopUp: () => void;
+  hideRemovePopUp: () => void;
+  showCartError: () => void;
+  hideCartError: () => void;
+}

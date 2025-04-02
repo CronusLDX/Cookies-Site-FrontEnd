@@ -5,7 +5,6 @@ import { IoClose } from 'react-icons/io5';
 import CarrinhoItem from '../CarrinhoItem';
 import { formattedCurrency } from '../../entities/AllUseFunctions';
 import { useCart } from '../../contexts/CartContext';
-
 import { CartButton, ThemeCart } from './style';
 
 const Carrinho: React.FC = () => {
@@ -53,7 +52,6 @@ const Carrinho: React.FC = () => {
                 {formattedCurrency(handleTotalCartOrder())}
               </Text>
             </Flex>
-
             <Flex justify="end" mt="8">
               <Button
                 variant="solid"

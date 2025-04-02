@@ -26,7 +26,10 @@ const Colaboradores: React.FC = () => {
     },
   ];
   return (
-    <section className="bg-[#3d0d0d] text-white py-16 px-8 text-center w-full">
+    <section
+      className="bg-[#3d0d0d] text-white py-16 px-8 text-center w-full"
+      id="colaboradores"
+    >
       <h1 className="text-4xl lg:text-5xl lily mb-[3rem]">Nossa Equipe</h1>
       <p className="text-xl font-light mb-10">
         Arraste para a esquerda ou para a direita!

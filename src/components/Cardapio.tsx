@@ -43,7 +43,10 @@ const Cardapio: React.FC = () => {
     },
   ];
   return (
-    <section className="w-full h-full flex flex-col items-center bg-[#fdfafa] ">
+    <section
+      className="w-full h-full flex flex-col items-center bg-[#fdfafa] "
+      id="cardapio"
+    >
       <h1 className="lily text-3xl lg:text-5xl mt-12 mb-10">Cardápio</h1>
       <p className="lg:text-lg text-md font-light mb-10">
         Arraste para um dos lados e verifique o nosso cardápio!

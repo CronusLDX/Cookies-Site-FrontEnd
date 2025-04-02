@@ -6,6 +6,7 @@ import Colaboradores from '../components/Colaboradores';
 import FAQSection from '../components/FAQSection';
 import Cardapio from '../components/Cardapio';
 import Carrinho from '../components/Carrinho/Carrinho';
+import PopUpSection from '../components/PopUps/PopUpSection';
 
 export const RootLayout: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ export const RootLayout: React.FC = () => {
       <Colaboradores />
       <FAQSection />
       <Carrinho />
+      <PopUpSection />
       <Footer />
     </>
   );

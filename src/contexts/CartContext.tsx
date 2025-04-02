@@ -1,4 +1,4 @@
-import {
+import React, {
   createContext,
   ReactNode,
   useContext,
@@ -11,6 +11,8 @@ import {
   OrderList,
 } from '../entities/Interfaces';
 import { z } from 'zod';
+
+import { UsePopUp } from './PopUpContext';
 
 export const CartContext = createContext<CartContextType | null>(null);
 
@@ -26,6 +28,15 @@ const taskSchema = z.object({
 export const CartProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const {
+    showRemovePopUp,
+    hideRemovePopUp,
+    showPurchasePopUp,
+    hidePurchasePopUp,
+    showCartError,
+    hideCartError,
+  } = UsePopUp();
+
   const [data, setData] = useState<CarrinhoInfo[]>(() => {
     const storedData = localStorage.getItem('cartData');
     return storedData ? JSON.parse(storedData) : [];
@@ -73,8 +84,17 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
         buyingDate: new Date(),
       };
     });
-    sendToPay(finalOrderList);
+    if (finalOrderList.length > 0) {
+      sendToPay(finalOrderList);
+      showPurchasePopUp();
+    } else {
+      showCartError();
+    }
     setData([]);
+    setTimeout(() => {
+      hidePurchasePopUp();
+      hideCartError();
+    }, 3000);
   };
 
   const handleAddQuantity = (id: number) => {
@@ -140,10 +160,11 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
           date,
           orders: [item],
           total: item.price * item.quantity,
+          orderID: Date.now(),
         });
       }
       return acc;
-    }, [] as { date: Date; orders: OrderList[]; total: number }[]);
+    }, [] as { date: Date; orders: OrderList[]; total: number; orderID: number }[]);
 
     setGroupOrderedList(prevGroupList => {
       const updatedGroupList = [...prevGroupList, ...orderFilteredByDate];
@@ -168,6 +189,8 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
 
   const removeFromCart = (index: number) => {
     setData(prevData => prevData.filter(d => d.id !== index));
+    showRemovePopUp();
+    setTimeout(() => hideRemovePopUp(), 3000);
   };
 
   return (

@@ -22,7 +22,10 @@ const FAQSection: React.FC = () => {
     },
   ];
   return (
-    <section className="bg-white text-black py-16 px-8 text-center w-full h-full justify-center items-center flex flex-col">
+    <section
+      className="bg-white text-black py-16 px-8 text-center w-full h-full justify-center items-center flex flex-col"
+      id="FAQ"
+    >
       <h1 className="text-4xl lg:text-5xl lily mb-[3rem] text-black">FAQ</h1>
       <div
         className="flex flex-col justify-center items-center w-full

@@ -1,12 +1,15 @@
 import { RouterProvider } from 'react-router-dom';
 import { routes } from './Routes';
 import { CartProvider } from './contexts/CartContext';
+import { PopUpProvider } from './contexts/PopUpContext';
 
 const App = () => {
   return (
-    <CartProvider>
-      <RouterProvider router={routes}></RouterProvider>
-    </CartProvider>
+    <PopUpProvider>
+      <CartProvider>
+        <RouterProvider router={routes}></RouterProvider>
+      </CartProvider>
+    </PopUpProvider>
   );
 };
 

@@ -11,7 +11,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="browm dark:bg-gray-900 relative  w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a
+          href="#apresentacao"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img src={cookieLogo} className="h-16" alt="Cookie Logo" />
           <span className="self-center text-2xl font-light  text-white lily">
             Cookie Fit
@@ -52,15 +55,15 @@ const Navbar: React.FC = () => {
           <ul className="flex gap-20 flex-col p-4 md:p-0 mt-4 font-medium   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white   ">
             <li>
               <a
-                href="#"
+                href="#diferencial"
                 className="block lily text-2xl py-2 px-3  rounded-sm "
               >
-                Sobre Nós
+                Nosso Diferencial
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#cardapio"
                 className="block lily  text-2xl py-2 px-3  rounded-sm "
               >
                 Cardápio
@@ -68,10 +71,18 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#colaboradores"
                 className="block lily  text-2xl py-2 px-3  rounded-sm "
               >
                 Nossa Equipe
+              </a>
+            </li>
+            <li>
+              <a
+                href="#FAQ"
+                className="block lily  text-2xl py-2 px-3  rounded-sm "
+              >
+                FAQ
               </a>
             </li>
           </ul>
