@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import cookieLogo from '/src/assets/cookie-logo.svg';
+import cookieLogo from '../../public/assets/cookie-logo.svg';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

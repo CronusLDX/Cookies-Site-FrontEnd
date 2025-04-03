@@ -1,5 +1,5 @@
 import React from 'react';
-import cookieLogo from '/src/assets/cookie-logo.svg';
+import cookieLogo from '../../public/assets/cookie-logo.svg';
 
 const Footer: React.FC = () => {
   return (

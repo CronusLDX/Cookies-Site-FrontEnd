@@ -3,7 +3,7 @@ import React from 'react';
 const Apresentacao: React.FC = () => {
   return (
     <section
-      className="relative w-full h-full flex justify-center flex-col items-center bg-cover bg-center bg-[url('/src/assets/cookie-presentation.svg')]"
+      className="relative w-full h-full flex justify-center flex-col items-center bg-cover bg-center bg-[url('../../public/assets/cookie-presentation.svg')]"
       id="apresentacao"
     >
       <div className="absolute top-0 left-0 w-full h-full wheat opacity-80"></div>

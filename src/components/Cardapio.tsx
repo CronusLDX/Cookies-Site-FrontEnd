@@ -7,7 +7,7 @@ import { CarrinhoInfo } from '../entities/Interfaces';
 import CookieAveia from '../../public/assets/cookie-aveia.svg';
 import CookieLimao from '../../public/assets/cookie-limao.svg';
 import CookieMorango from '../../public/assets/cookie-morango.svg';
-import CookieGotas from '../../public/assets/cookie-gotas.svg';
+import CookieGotas from '../../public/assets/cookies-chocolate.svg';
 
 const Cardapio: React.FC = () => {
   const cartData: CarrinhoInfo[] = [
