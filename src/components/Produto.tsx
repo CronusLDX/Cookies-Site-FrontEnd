@@ -2,15 +2,21 @@ import React from 'react';
 import { CarrinhoInfo } from '../entities/Interfaces';
 import { formattedCurrency } from '../entities/AllUseFunctions';
 import { useCart } from '../contexts/CartContext';
+import { UsePopUp } from '../contexts/PopUpContext';
 
 const Produto: React.FC<{ prop: CarrinhoInfo }> = ({ prop }) => {
   const { data, sendToCart, handleAddQuantity } = useCart();
+  const { showAddItemCartPopUp, hideAddItemCartPopUp } = UsePopUp();
 
   const handleClick = () => {
     const exisitingItem = data.find(item => item.id === prop.id);
     exisitingItem && exisitingItem.id
       ? handleAddQuantity(exisitingItem.id)
       : sendToCart({ ...prop, quantity: 1 });
+    showAddItemCartPopUp();
+    setTimeout(() => {
+      hideAddItemCartPopUp();
+    }, 2000);
   };
   return (
     <section className="w-full h-full flex justify-center items-center bg-[#F6EFEF]  flex-col  rounded-2xl lg:hover:scale-104 transition-all duration-500 ease-in-out transform lg:hover:cursor-pointer ">

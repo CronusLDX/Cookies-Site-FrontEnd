@@ -9,6 +9,7 @@ export const PopUpProvider: React.FC<{ children: ReactNode }> = ({
   const [purchasePopUp, setPurchasePopUp] = useState(false);
   const [removePopUp, setRemovePopUp] = useState(false);
   const [emptyCartErrorPopUp, setEmptyCartErrorPopUp] = useState(false);
+  const [addItemCartPopUp, setAddItemCartPopUp] = useState(false);
 
   const showPurchasePopUp = () => {
     setPurchasePopUp(true);
@@ -29,6 +30,12 @@ export const PopUpProvider: React.FC<{ children: ReactNode }> = ({
   const hideCartError = () => {
     setEmptyCartErrorPopUp(false);
   };
+  const showAddItemCartPopUp = () => {
+    setAddItemCartPopUp(true);
+  };
+  const hideAddItemCartPopUp = () => {
+    setAddItemCartPopUp(false);
+  };
 
   return (
     <PopUpContext.Provider
@@ -36,12 +43,15 @@ export const PopUpProvider: React.FC<{ children: ReactNode }> = ({
         purchasePopUp,
         removePopUp,
         emptyCartErrorPopUp,
+        addItemCartPopUp,
         showPurchasePopUp,
         hidePurchasePopUp,
         showRemovePopUp,
         hideRemovePopUp,
         showCartError,
         hideCartError,
+        showAddItemCartPopUp,
+        hideAddItemCartPopUp,
       }}
     >
       {children}

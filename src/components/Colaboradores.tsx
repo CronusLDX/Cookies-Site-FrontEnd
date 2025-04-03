@@ -8,19 +8,19 @@ const Colaboradores: React.FC = () => {
   const workersInfo: CollabInfo[] = [
     {
       name: 'Alonso da Silva',
-      profileImage: 'src/assets/pessoa1.svg',
+      profileImage: './src/assets/pessoa1.svg',
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. \nEle é um dos nossos melhores!',
     },
     {
       name: 'Alonso da Silva',
-      profileImage: 'src/assets/pessoa2.svg',
+      profileImage: './src/assets/pessoa2.svg',
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. Ele é um dos nossos melhores!',
     },
     {
       name: 'Alonso da Silva',
-      profileImage: 'src/assets/pessoa2.svg',
+      profileImage: './src/assets/pessoa2.svg',
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. Ele é um dos nossos melhores!',
     },

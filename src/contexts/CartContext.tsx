@@ -94,7 +94,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
     setTimeout(() => {
       hidePurchasePopUp();
       hideCartError();
-    }, 3000);
+    }, 2000);
   };
 
   const handleAddQuantity = (id: number) => {
@@ -190,7 +190,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({
   const removeFromCart = (index: number) => {
     setData(prevData => prevData.filter(d => d.id !== index));
     showRemovePopUp();
-    setTimeout(() => hideRemovePopUp(), 3000);
+    setTimeout(() => hideRemovePopUp(), 2000);
   };
 
   return (

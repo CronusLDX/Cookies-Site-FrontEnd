@@ -41,10 +41,13 @@ export interface PopUpContextType {
   purchasePopUp: boolean;
   removePopUp: boolean;
   emptyCartErrorPopUp: boolean;
+  addItemCartPopUp: boolean;
   showPurchasePopUp: () => void;
   hidePurchasePopUp: () => void;
   showRemovePopUp: () => void;
   hideRemovePopUp: () => void;
   showCartError: () => void;
   hideCartError: () => void;
+  showAddItemCartPopUp: () => void;
+  hideAddItemCartPopUp: () => void;
 }
