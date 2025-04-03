@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import Produto from './Produto';
 import { CarrinhoInfo } from '../entities/Interfaces';
+import CookieAveia from '../../public/assets/cookie-aveia.svg';
+import CookieLimao from '../../public/assets/cookie-limao.svg';
+import CookieMorango from '../../public/assets/cookie-morango.svg';
+import CookieGotas from '../../public/assets/cookie-gotas.svg';
 
 const Cardapio: React.FC = () => {
   const cartData: CarrinhoInfo[] = [
@@ -12,7 +16,7 @@ const Cardapio: React.FC = () => {
       title: 'Cookie de Aveia',
       description:
         'Cookie de aveia  com  um delicioso sabor, além do mais é saudável!',
-      image: './src/assets/cookie-aveia.svg',
+      image: CookieAveia,
       price: 8.99,
       quantity: 0,
     },
@@ -20,7 +24,7 @@ const Cardapio: React.FC = () => {
       id: 2,
       title: 'Cookie de Limão',
       description: 'Cookie de limão com uma deliciosa cobertura de limão.',
-      image: './src/assets/cookie-limao.svg',
+      image: CookieLimao,
       price: 9.99,
       quantity: 0,
     },
@@ -29,7 +33,7 @@ const Cardapio: React.FC = () => {
       title: 'Cookie de Morango',
       description:
         'Cookie de morango com especial sabor que a própria fruta traz!',
-      image: './src/assets/cookie-morango.svg',
+      image: CookieMorango,
       price: 7.99,
       quantity: 0,
     },
@@ -37,7 +41,7 @@ const Cardapio: React.FC = () => {
       id: 4,
       title: 'Cookie de Gotas de Chocolate',
       description: 'Cookie de gotas de chocolate tradicional!',
-      image: './src/assets/cookies-chocolate.svg',
+      image: CookieGotas,
       price: 10.99,
       quantity: 0,
     },

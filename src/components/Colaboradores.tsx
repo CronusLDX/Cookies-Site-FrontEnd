@@ -3,24 +3,26 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import CollabCard from './CollabCard';
 import { CollabInfo } from '../entities/Interfaces';
+import Pessoa2 from '../../public/assets/pessoa2.svg';
+import Pessoa1 from '../../public/assets/pessoa1.svg';
 
 const Colaboradores: React.FC = () => {
   const workersInfo: CollabInfo[] = [
     {
       name: 'Alonso da Silva',
-      profileImage: './src/assets/pessoa1.svg',
+      profileImage: Pessoa1,
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. \nEle é um dos nossos melhores!',
     },
     {
       name: 'Alonso da Silva',
-      profileImage: './src/assets/pessoa2.svg',
+      profileImage: Pessoa2,
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. Ele é um dos nossos melhores!',
     },
     {
       name: 'Alonso da Silva',
-      profileImage: './src/assets/pessoa2.svg',
+      profileImage: Pessoa2,
       description:
         'Alonso é um mestre na arte da panificação, responsável por criar os deliciosos biscoitos e pães artesanais da Cookies Fit. Ele é um dos nossos melhores!',
     },
