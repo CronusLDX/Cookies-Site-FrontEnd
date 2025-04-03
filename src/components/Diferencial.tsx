@@ -1,6 +1,6 @@
-import deliveryLogo from '/src/assets/delivery-logo.svg';
-import moneyLogo from '/src/assets/money-logo.svg';
-import bastaoLogo from '/src/assets/bastao-de-asclepio.svg';
+import deliveryLogo from '../../public/assets/delivery-logo.svg';
+import moneyLogo from '../../public/assets/money-logo.svg';
+import bastaoLogo from '../../public/assets/bastao-de-asclepio.svg';
 
 const Diferencial = () => {
   return (
